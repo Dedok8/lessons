@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="uk">
+	<head>
+		<!-- Кодування -->
+		<meta charset="UTF-8">
+		<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Заголовок сторінки в браузері -->
+		<title>Lesson 2 - Знайомство з HTML</title>
+	</head>
+	<body>
+		<!-- 
+			Синтаксис HTML
+			Все що відкрито, має бути закрито
+		-->
+
+		<!-- Коментар (Контрол + крапка) -->
+
+		<!-- HTML-тег -->
+		<!-- Будова (анатомія) HTML-тегу -->
+
+		<!-- Тег з зачиняючим елементом -->
+		<!-- 
+			<назва_тегу> 
+				Наповнення тегу (інші теги, контент)
+			</назва_тегу>
+		-->
+
+		<!-- Тег без зачиняючого елементу -->
+		<!-- 
+			<назва_тегу>
+		 -->
+
+		<!-- Тег з атрибутами -->
+		<!-- Атрибутів може бути скільки завгодно -->
+
+		<!-- 
+			<назва_тегу назва_атрибуту="значення атрибуту" назва_атрибуту_2="значення атрибуту"> 
+				Наповнення тегу (інші теги, контент)
+			</назва_тегу>
+			або
+			<назва_тегу назва_атрибуту="значення атрибуту">
+		 -->
+
+		<!-- Теги для будівництва (будівельні) -->
+
+		<!-- DIV - Будівельний тег БЕЗ конкретного призначення (з зачиняючим елементом) -->
+		<div>
+			<!-- Наповнення тегу (інші теги, контент) -->
+		</div>
+		<!-- HEADER - Будівельний тег для побудови верхньої частини сайту\секції (з зачиняючим елементом) -->
+		<header>
+			<!-- Наповнення тегу (інші теги, контент) -->
+		</header>
+		<!-- FOOTER - Будівельний тег для побудови нижньої частини сайту\секції (з зачиняючим елементом) -->
+		<footer>
+			<!-- Наповнення тегу (інші теги, контент) -->
+		</footer>
+		<!-- MAIN - Будівельний тег для побудови головної частини сайту (має бути лише один на сторінці) (з зачиняючим елементом) -->
+		<main>
+			<!-- Наповнення тегу (інші теги, контент) -->
+		</main>
+
+		<!-- Стандартна конструкція сайту -->
+		<header></header>
+		<main></main>
+		<footer></footer>
+
+		<!-- Будівельні теги ніяк не змінюють контент -->
+		Текст
+		<div>
+			Текст
+		</div>
+		<header>
+			Текст
+		</header>
+		<main>
+			Текст
+		</main>
+		<footer>
+			Текст
+		</footer>
+
+		<!-- Теги для контенту (контентні) -->
+		<!-- Контентні теги можуть змінювати контент -->
+
+		<!-- H1-H6 Теги для заголовків (з зачиняючим елементом) -->
+		<h1>Заголовок №1</h1> <!-- Лише один на сторінці бо він головний -->
+		<h2>Заголовок №2</h2>
+		<h3>Заголовок №3</h3>
+		<h4>Заголовок №4</h4>
+		<h5>Заголовок №5</h5>
+		<h6>Заголовок №6</h6>
+
+		<!-- P - тег параграфу (з зачиняючим елементом) -->
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam distinctio libero ad maxime! Praesentium, neque iure. Dolores quisquam unde praesentium et amet saepe? Ab fugit asperiores nobis, distinctio ex praesentium?
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam distinctio libero ad maxime! Praesentium, neque iure. Dolores quisquam unde praesentium et amet saepe? Ab fugit asperiores nobis, distinctio ex praesentium?
+		</p>
+
+		<!-- MARK та SPAN - виділення слова(ів) (з зачиняючим елементом) -->
+		<p>
+			Lorem <mark>ipsum</mark> dolor sit amet <span>consectetur adipisicing</span> elit. Quisquam distinctio libero ad maxime! Praesentium, neque iure. Dolores quisquam unde praesentium et amet saepe? Ab fugit asperiores nobis, distinctio ex praesentium?
+		</p>
+
+		<!-- BR - перериває рядок тексту (без зачиняючого елемента) -->
+		<p>
+			Lorem ipsum dolor sit <br> amet consectetur adipisicing elit. Quisquam distinctio libero ad maxime! Praesentium, neque iure. Dolores quisquam unde praesentium et amet saepe? Ab fugit asperiores nobis, distinctio ex praesentium?
+		</p>
+
+		<!-- UL+LI Маркований список  (з зачиняючим елементом) -->
+		<ul>
+			<li>Пункт списку</li>
+			<li>
+				<a href="#some-uniq-id" class="link">Вниз</a>
+			</li>
+			<li>
+				<a target="_blank" href="contacts.html" class="link">Контакти</a>
+			</li>
+			<li>Пункт списку</li>
+			<li>Пункт списку</li>
+			<li>Пункт списку</li>
+		</ul>
+
+		<!-- OL+LI Нумерований список  (з зачиняючим елементом) -->
+		<ol>
+			<li>Пункт списку</li>
+			<li>Пункт списку</li>
+			<li>Пункт списку</li>
+			<li>Пункт списку</li>
+		</ol>
+
+		<!-- Вкладенність списків -->
+		<ul>
+			<li>
+				Пункт списку
+				<ul>
+					<li>ПідПункт списку</li>
+					<li>
+						ПідПункт списку
+						<ol>
+							<li>ПідПідПункт списку</li>
+							<li>ПідПідПункт списку</li>
+							<li>ПідПідПункт списку</li>
+						</ol>
+					</li>
+					<li>ПідПункт списку</li>
+				</ul>
+			</li>
+			<li>
+				Пункт списку
+			</li>
+			<li>
+				Пункт списку
+			</li>
+			<li>
+				Пункт списку
+			</li>
+		</ul>
+
+		<!-- IMG - вивід зображення (без зачиняючого елемента) -->
+		<!-- 
+			Атрибути:
+			src - шлях до зображення (файлу)
+			alt - альтернативний текст
+		 -->
+		<img src="img/honey.jpg" alt="альтернативний текст">
+
+		<!-- A - гіпертекстове посилання (з зачиняючим елементом) -->
+		<!-- <a href="адреса">Текст (анкор)</a> -->
+		<a href="https://google.com">
+			Google
+		</a>
+		<!--  Атрибут target - встановлює де саме має відкритись адреса -->
+		<a target="_blank" href="https://google.com">
+			Google у новій вкладці
+		</a>
+
+		<!-- Часті атрибути -->
+
+		<!-- 
+			CLASS - додає клас(класи) 
+			ім'я класів пишемо латиницею (краще англійскі слова), 
+			у нижньому регістрі, 
+			пробіл замінюємо на дефіс
+
+			Що одного тегу ми може додавати безліч 
+			класів (через пробіл) в одному атрибуті class
+		-->
+		<!-- DIV з класом block -->
+		<div class="block"></div>
+		<!-- P з класом block -->
+		<p class="block"></p>
+
+		<!-- 
+			TITLE - підказка
+		 -->
+		<a target="_blank" title="На сайт Google" href="https://google.com" class="link">
+			Google
+		</a>
+
+		<!-- 
+			ID - УНІКАЛЬНИЙ ідентифікатор
+		 -->
+		<div class="text">
+			<p>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem aspernatur ducimus tempore exercitationem corporis sint quidem porro, quod quisquam tempora praesentium saepe labore, rem asperiores voluptatibus esse? Illum voluptatem optio suscipit nisi voluptate quae, enim dolor dicta ipsa temporibus vitae vero cum eum animi libero doloribus! Quidem voluptatem recusandae voluptate?
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, provident.
+			</p>
+			<p id="some-uniq-id">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere corporis necessitatibus possimus nostrum fugit dolorum eum ullam! Impedit ipsum iusto sit eum ea dicta facilis eaque minima, nesciunt eos cumque nobis maxime officiis laboriosam odio hic aliquam velit cum. Voluptatibus molestias saepe quibusdam suscipit excepturi aut ipsum quia officiis reprehenderit nemo vel magni aliquid, dolor placeat ipsam molestiae facere esse cupiditate rem minus eaque ullam beatae amet! Deserunt autem aperiam ratione, magnam perspiciatis, unde, iure ipsa aspernatur reiciendis nostrum distinctio blanditiis illo sed illum amet suscipit! Magni odit aperiam similique inventore maxime nobis nemo aspernatur, sapiente optio ipsum eius quos.
+			</p>
+		</div>
+
+		<!-- БЛОЧНІ РДКОВІ та БЛОЧНО-РДКОВІ теги -->
+		<!-- Блочні теги -->
+		<!-- Усі будівельні (div,header,footer,main та інші) -->
+		<!-- Контентні: h1-h6,p,ul,ol,li -->
+
+		<!-- Рядкові теги -->
+		<!-- span,mark,a,br -->
+
+		<!-- Блочно-рядковий -->
+		<!-- img -->
+
+		<!-- 
+			Ширина блочного тегу завжди займає 
+			ВСЮ ширину батьківського елементу. 
+			Висота формується контентов всередені
+			Блочний тег завжди починається з нового рядка
+		-->
+		<div>
+			Привіт!
+		</div>
+		<p>
+			Привіт!
+		</p>
+
+		<!-- 
+			Ширина рядкового 
+			тегу займає ширину по ширині
+			контенту всередені.
+			Висота формується контентов всередені
+			Рядковий тег намагається розміститись в рядок
+			разом і іншими рядковими тегами або текстом
+		 -->
+		<div>
+			Привіт!
+		</div>
+		<mark>Привіт!</mark>
+		<mark>Знову привіт!</mark>
+		<p>
+			Привіт!
+		</p>
+		<!-- 
+			Ширина блочно-рядкового тегу займає 
+			ширину по ширині контенту всередені.
+			Висота формується контентов всередені
+			Блочно-рядковий тег намагається розміститись в рядок
+			разом з іншими рядковими тегами або текстом
+		 -->
+		<div>
+			Текст до
+			<img width="100" src="img/honey.jpg" alt="Honey">
+			<span>текст після</span>
+		</div>
+
+	</body>
+</html>
