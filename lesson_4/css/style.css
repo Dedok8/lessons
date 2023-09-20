@@ -1,0 +1,36 @@
+@import url(reset.css);
+
+
+#start *{
+  color: red;
+}
+
+.river > p{
+  color: green;
+}
+
+.river{
+  color: orange;
+}
+
+
+[class*="__container"] {
+	color: blue; 
+}
+
+
+.trial__container p{
+  color: red;
+}
+
+.trial__container > p{
+  color: blue;
+}
+
+.trial__container ~ p{
+  color: yellow;
+}
+
+.trial__container + p{
+  color: aqua;
+}
