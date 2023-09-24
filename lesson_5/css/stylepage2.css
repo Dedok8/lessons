@@ -1,0 +1,66 @@
+@import url(reset.css);
+@import url(font.css);
+
+body{
+  font-size: 30px;
+}
+
+.font-1{
+  font-family: "Causten";
+}
+
+.font-2{
+  font-family: "ghostings";
+}
+
+.font-3{
+  font-family:"Stupid-Meeting";
+}
+
+.line-1{
+  font-style: italic;
+  color: rgb(174, 35, 45);
+}
+
+.line-2{
+  text-align: center;
+  font-style: oblique;
+
+} 
+
+.line-3{
+  color: rgb(144, 85, 85);
+  letter-spacing: 10px;
+}
+
+.decoration-1{
+  text-decoration: line-through;
+}
+
+.decoration-2{
+  text-decoration: overline;
+}
+
+.decoration-3{
+  text-decoration: underline;
+}
+
+.shadow-1{
+  text-shadow: 3px 3px 2px rgba(77, 180, 212, 1);
+  word-spacing: 20px;
+}
+
+.shadow-2{
+  text-shadow: 0px 0px 5px rgba(128, 0, 0, 1);
+  text-indent: 50px;
+}
+
+.shadow-3{
+  text-shadow: -5px 0px 2px rgba(58, 167, 0, 1);
+  white-space: nowrap;
+}
+
+.page-1{
+  color: blue;
+  font-size: 50px;
+}
