@@ -1,0 +1,455 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+[class*="__container"]{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding:10px 10px ;
+
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+
+
+/*==========header==========*/
+.header{
+  padding-bottom: 15px;
+  border-bottom: solid 1px #EDEEF2;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  background-color: #fff;
+}
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Causten";
+  font-weight: 500;
+  line-height: normal;
+  font-style: normal;
+  font-size: 18px;
+  margin-top: 34px;
+}
+
+.search {
+  font-weight: 400;
+  padding: 12px 48px;
+  border-radius: 8px;
+  background: #F6F6F6;
+  display: flex;
+  align-items: center;
+  gap: 12px; ;
+}
+
+.langauge-list {
+  padding: 5px;
+}
+
+
+
+.parents{
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-bottom: 10px;
+}
+
+.list-lvl-two{
+  position: absolute;
+  top: 100%;
+  left:0 ;
+  visibility: hidden;
+  transform: 0.4s;
+
+}
+
+
+.lvl-two-item:not(:last-child){
+  padding-bottom: 8px;
+}
+
+.list-item-link:hover{
+  text-decoration: underline;
+}
+
+.parents:hover .list-lvl-two{
+  visibility: visible;
+}
+
+.list-item::after{
+  content: "";
+  background: url("../img/Vector.svg") no-repeat ;
+  height: 10px;
+  width: 12px;
+  margin: 0px 0px 0px 19px;
+  transition: 0.4s;
+}
+
+.langauge-list:hover .list-item::after{
+  transform: rotate(180deg);
+}
+
+.list-item-link{
+  transition: 4s;
+}
+
+.langauge-list a:hover{
+  color: #6620C1;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 29px;
+}
+
+.button-link {
+  text-align: center;
+  padding: 12px 48px;
+  transition: 0.2s;
+
+}
+
+.logo-link-img{
+  width: 100%;
+}
+.login-link {
+  border-radius: 8px;
+  background: #8A33FD;
+  color: #fff;
+}
+
+.login-link:hover{
+  border-radius: 8px;
+  background: #6620C1;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.sign-up-link {
+  color: #8A33FD;
+  border-radius: 8px;
+  border: 1px solid #3C4242;
+}
+
+.sign-up-link:hover{
+  border-radius: 8px;
+  border: 1px solid #3C4242;
+  background: rgba(102, 32, 193, 0.03);
+}
+/*==========main==========*/
+
+.page__container{
+  padding-top: 150px;
+}
+
+.sub-title{
+  color: #3C4242;
+  font-family: "Core Sans C";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.5px; 
+  letter-spacing: 0.68px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 70px;
+}
+
+.sub-title::before{
+  content: "";
+  background:url("../img/sub-title-line.svg") no-repeat ;
+  width: 6px;
+  height: 30px;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 50px;
+  font-family: "Causten";
+  font-style: normal;
+  line-height: 27.93px; 
+
+}
+.product__column {
+  display: flex;
+  flex: 0 1 270px;
+}
+
+
+.block-img-link img{
+  width: 100%;
+}
+
+.block-img-link:hover{
+  transform: scale(1.1);
+}
+.block__body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.body__title {
+  margin-bottom: 4px;
+  color: #2A2F2F;
+  font-size: 17.875px;
+  font-weight: 700;
+  letter-spacing: -0.715px;
+}
+
+.body__title-link{
+  transition: 1.2s;
+
+}
+
+.body__title-link:hover{
+  text-decoration: underline;
+}
+.body__info {
+  color: #7F7F7F;
+  font-size: 13.407px;
+  font-weight: 500;
+  letter-spacing: -0.536px;
+}
+.body__link {
+  align-self: center;
+}
+
+.body__link:hover{
+  transform: scale(1.2);
+}
+
+
+
+.page__container-two{
+  max-width: 903px;
+  margin-top: 50px;
+}
+
+.sub-label{
+  color: #3C4242;
+  font-family: "Core Sans C";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.5px;
+  letter-spacing: 0.56px;
+}
+
+.content{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__wishlist{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #EDEEF2;
+  
+}
+
+.wishlist__items {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+.wishlist__item-main-photo img {
+  width: 100%;
+}
+
+.wishlist__item-info {
+  display: flex;
+  flex-direction: column;
+  gap:12px ;
+}
+.wishlist__item-info-text, .price__item-text, .wishlist__item-info-text-link,.feature__info,.feature__info-grey {
+  color: #3C4242;
+  font-family: "Causten";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.44px;
+}
+
+.wishlist__item-info-text-link{
+  transition: 0,5s;
+}
+
+.wishlist__item-info-text-link:hover, .info__name-link:hover{
+  text-decoration: underline;
+}
+
+.wishlist__item-info-text-row, .feature__info-grey {
+  color: #807D7E;
+  font-weight: 500;
+}
+
+.wishlist__price{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: flex-end;
+  padding-right: 7px;
+}
+
+.price__item-text{
+  color: #807D7E;
+}
+
+.price__item-btn, .info__btn-link{
+  color: #FFF;
+  text-align: center;
+  font-family: "Causten";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 8px;
+  background: #8A33FD;
+  padding: 14px 28px;
+  transition: 0.5s;
+}
+
+.price__item-btn:hover, .info__btn-link:hover{
+  border-radius: 8px;
+  background: #6620C1;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.page__container-three{
+  margin-top: 50px;
+  max-width: 895px;
+}
+
+.order{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.order__block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom:30px ;
+  border-bottom: solid 1px #EDEEF2;
+
+}
+.order__number {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  background: #F6F6F6;
+  padding: 28px 47px;
+}
+.order__date {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.date, .about-produt {
+  color: #3C4242;
+  font-family: "Causten";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.order__date-info {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.grey, .about-produt-gray {
+  color: #807D7E;
+  font-size: 14px;
+  font-weight: 600;
+}
+.grey-row, .about-produt-row,.feature__info-row {
+  color: #BEBCBD;
+  font-size: 14px;
+  font-weight: 400;
+}
+.order__status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 7px;
+}
+
+.order__info {
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+}
+.info__items {
+  display: flex;
+  gap: 25px;
+}
+.info__img img{
+  width: 100%;
+}
+.info__img-link {
+}
+.info__obout {
+  padding: 3px 0px;
+
+}
+
+.info__name-link{
+  transition: 0.4s;
+}
+.info__name {
+  margin-bottom: 10px;
+}
+.date {
+}
+.info__feature {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.feature {
+}
+.feature__info {
+  font-size: 14px;
+}
+.feature__info-row {
+  font-weight: 600;
+}
+
+.feature__info-grey {
+  font-size: 14px;
+}
+.info__btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.info__btn-link {
+}
+
+/*==========footer==========*/
