@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/form_two.css">
+  <title>form_two</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="logo">
+          <a class="logo-link" href="#">
+            <img class="logo-link-img" src="img/Logo.svg" alt="Euphoria">
+          </a>
+        </div>
+        <form id="some-form-header" enctype="multipart/form-data" method="GET" class="form" action="#">
+          <div class="form-container">
+            <img src="img/search.svg" alt="search">
+            <input class="input-search" autocomplete="off" name="search" type="search" placeholder="Search">
+          </div>
+        </form>
+
+        <ul class="langauge-list">
+          <li class="list-item parents">
+            <a class="list-item-link" href="">Forms</a>
+            <ul class="list-lvl-two lvl-two">
+              <li class="lvl-two-item"><a href="index.html" class="lvl-two-item-link">Form #1</a></li>
+              <li class="lvl-two-item"><a href="form_two.html" class="lvl-two-item-link">Form #2</a></li>
+              <li class="lvl-two-item"><a href="form__three.html" class="lvl-two-item-link">Form #3</a></li>
+            </ul>
+          </li>
+        </ul>
+
+
+
+
+        <form id="some-form-header02" enctype="multipart/form-data" method="GET" class="form" action="#">
+          <div class="form__buttons">
+            <button type="button" class="btn login">Login</button>
+            <button type="button" class="btn sign-up">Sing up</button>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="page__container">
+        <h2 class="title">My Info</h2>
+        <h3 class="sub-title">Add Address</h3>
+
+        <form id="some-form-main" enctype="multipart/form-data" method="GET" class="form" action="#">
+          <div class="form-container">
+
+            <div class="form__flex-column">
+              <div class="form__flex">
+                <div class="form__block">
+                  <label class="form__label" for="first-name">First Name*</label>
+                  <input class="form__input" autocomplete="off" name="first-name" type="text" id="first-name"
+                    placeholder="First Name" required>
+                </div>
+                <div class="form__block">
+                  <label class="form__label" for="last-name">Last Name**</label>
+                  <input class="form__input" autocomplete="off" name="last-name" type="text" id="last-name"
+                    placeholder="Last Name*" required>
+                </div>
+              </div>
+
+
+              <div class="form__flex">
+                <div class="form__block">
+                  <label class="form__label" for="country-region">Country / Region*</label>
+                  <input class="form__input" autocomplete="off" name="country-region" type="text" id="country-region"
+                    placeholder="Country / Region" required>
+                </div>
+                <div class="form__block">
+                  <label class="form__label" for="company-name">Company Name</label>
+                  <input class="form__input" autocomplete="off" name="company-name" type="text" id="company-name"
+                    placeholder="Company (optional)" required>
+                </div>
+              </div>
+
+              <div class="form__flex">
+                <div class="form__block">
+                  <label class="form__label" for="street-address">Street Address*</label>
+                  <input class="form__input" autocomplete="off" name="street-address" type="text" id="street-address"
+                    placeholder="House number and street name" required>
+                </div>
+                <div class="form__block">
+                  <label class="form__label" for="apt-suite-unit">Apt, suite, unit</label>
+                  <input class="form__input" autocomplete="off" name="apt-suite-unit" type="text" id="apt-suite-unit"
+                    placeholder="apartment, suite, unit, etc. (optional)" required>
+                </div>
+              </div>
+
+              <div class="form__flex">
+                <div class="form__block">
+                  <label class="form__label" for="city">City*</label>
+                  <input class="form__input" autocomplete="off" name="city" type="text" id="city"
+                    placeholder="Town / City" required>
+                </div>
+
+
+
+                <div class="form__block">
+                  <label class="form__label" for="state">State*</label>
+                  <select class="form__select-items" name="state" id="state" required>
+                    <option class="form__select-item" value="state">State</option>
+                    <option class="form__select-item" value="indiana">Indiana</option>
+                    <option class="form__select-item" value="florida">Florida</option>
+                    <option class="form__select-item" value="louisiana">Louisiana</option>
+                    <option class="form__select-item" value="сalifornia">California</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__flex">
+                <div class="form__block">
+                  <label class="form__label" for="phone">Phone* </label>
+                  <input class="form__input" autocomplete="off" name="phone" type="tel" id="phone" placeholder="Phone"
+                    required>
+                </div>
+                <div class="form__block">
+                  <label class="form__label" for="postal-code">Postal Code*</label>
+                  <input class="form__input" autocomplete="off" name="postal-code" type="text" id="postal-code"
+                    placeholder="Postal Code" required>
+                </div>
+              </div>
+
+              <div class="form__flex">
+                <div class="form__block">
+                  <label class="form__label" for="comments">Delivery Instruction*</label>
+                  <textarea class="form__textarea" name="comments" id="comments"
+                    placeholder="Delivery Instruction"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__choice">
+              <fieldset class="form__fieldset">
+                <div class="form__checkbox checkbox">
+                  <input class="checkbox__input" type="checkbox" id="delivery-default" name="delivery-default">
+                  <label class="checkbox__label" for="delivery-default">Set as default shipping address</label>
+                </div>
+                <div class="form__checkbox checkbox">
+                  <input class="checkbox__input" type="checkbox" id="delivery-payment" name="delivery-payment">
+                  <label class="checkbox__label" for="delivery-payment">Set as default billing address</label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="form__buttons">
+              <button type="submit" class="btn btn-save">Save</button>
+              <button type="reset" class="btn btn-cancel">Cansel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <!--Тут не пусто, скоро буде контент-->
+      <div class="footer__container">
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
