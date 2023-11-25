@@ -1,0 +1,245 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+[class*="__container"]{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding:10px 10px ;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+
+
+/*==========header==========*/
+.header{
+  padding-bottom: 15px;
+  border-bottom: solid 1px #EDEEF2;
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  background-color: #fff;
+}
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Causten";
+  font-weight: 500;
+  line-height: normal;
+  font-style: normal;
+  font-size: 18px;
+  margin-top: 34px;
+}
+
+.header .form-container{
+  display: flex;
+  padding: 12px 20px;
+  gap: 12px;
+  border-radius: 8px;
+  background: #F6F6F6;
+}
+
+.header .form-container img{
+  flex-shrink: 0;
+}
+
+.header input{
+  background: #F6F6F6;
+}
+.langauge-list {
+  position: relative;
+  padding: 0px 5px;
+}
+
+
+
+.parents{
+  position: relative;
+  left: 0;
+  top: 0;
+  padding: 10px 0px;
+}
+
+.list-lvl-two{
+  position: absolute;
+  top: 100%;
+  left:0 ;
+  visibility: hidden;
+  transition: 4ms;
+
+}
+
+
+.lvl-two-item:not(:last-child){
+  padding-bottom: 8px;
+}
+
+.list-item-link:hover{
+  text-decoration: underline;
+}
+
+.parents:hover .list-lvl-two{
+  visibility: visible;
+}
+
+.list-item::after{
+  content: "";
+  background: url("../img/Vector.svg") no-repeat ;
+  height: 10px;
+  width: 12px;
+  margin: 0px 0px 0px 19px;
+  transition: 0.4s;
+}
+
+.langauge-list:hover .list-item::after{
+  transform: rotate(180deg);
+}
+
+.list-item-link{
+  transition: 4s;
+}
+
+.langauge-list a:hover{
+  color: #6620C1;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 8px;
+}
+.logo-link-img{
+  width: 100%;
+}
+
+.form__buttons {
+  display: flex;
+  gap: 29px;
+}
+
+.header .btn {
+  text-align: center;
+  padding: 12px 48px;
+  transition: 0.4s;
+
+}
+
+
+.login {
+  border-radius: 8px;
+  background: #8A33FD;
+  color: #fff;
+}
+
+.login:hover{
+  border-radius: 8px;
+  background: #6620C1;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.sign-up {
+  color: #8A33FD;
+  border-radius: 8px;
+  border: 1px solid #3C4242;
+}
+
+.sign-up:hover{
+  border-radius: 8px;
+  border: 1px solid #3C4242;
+  background: rgba(102, 32, 193, 0.03);
+}
+
+/*==========main==========*/
+.page__container{
+  padding-top: 150px;
+  max-width:1260px ;
+
+  color: #37393F;
+  font-family: "Inter";
+  font-style: normal;
+  line-height: normal;
+}
+
+.sub-title{
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.sub-title::before{
+  content: "";
+  background: url("../img/square.svg");
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+}
+
+.title{
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 121%;
+}
+
+.page__container form{
+  margin-top: 40px;
+}
+
+.form__column {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-bottom: 50px;
+}
+.form__flex-row:not(:last-child) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.form__input-item, .form__textarea{
+  flex: 1 0 auto;
+ 
+}
+
+.form__textarea-item{
+  min-height: 222px;
+}
+
+.form__textarea-item textarea{
+  resize: vertical;
+}
+
+.form__input-item input, textarea{
+  width: 100%;
+  border: 1px solid #DDD;
+  background: #F8F8F8;
+  padding: 21px 38px 22px 38px;
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.page__container .btn{
+  display: flex;
+  justify-content: center;
+}
+
+.submit{
+  padding: 21px 61px 22px 61px;
+  color: #fff;
+  background: #6B77E5;
+  transition: 0.4s;
+}
+
+.submit:hover{
+  background: #414ec0;
+ 
+}
