@@ -1,0 +1,294 @@
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten-light-webfont.woff2") format("woff2"), url("../fonts/causten-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten-regular-webfont.woff2") format("woff2"), url("../fonts/causten-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten-medium-webfont.woff2") format("woff2"), url("../fonts/causten-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten-semi-bold-webfont.woff2") format("woff2"), url("../fonts/causten-semi-bold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten-bold-webfont.woff2") format("woff2"), url("../fonts/causten-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten-extra-bold-webfont.woff2") format("woff2"), url("../fonts/causten-extra-bold-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/CoreSansC-75ExtraBold.woff2") format("woff2"), url("../fonts/CoreSansC-75ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Core Sans C";
+  src: url("../fonts/CoreSansC-55Medium.woff2") format("woff2"), url("../fonts/CoreSansC-55Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  color: inherit;
+  background-color: transparent;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+[class*=__container]:not([class*=form__container]) {
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 1270px;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+body {
+  background: url("../img/1618631245_10-phonoteka_org-p-povtoryayushchiesya-kartinki-dlya-fona-15.webp");
+  font-family: "Causten";
+  font-style: normal;
+  line-height: normal;
+}
+
+/*==========Header==========*/
+.header {
+  padding: 15px 0px;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.header__image .image__logo {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 91/45;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header__navbar .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+.header__navbar .nav__item-link {
+  color: #807D7E;
+  font-size: 22px;
+  font-weight: 500;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.header__navbar .nav__item-link:hover {
+  color: #3C4242;
+  font-size: 22px;
+  font-weight: 700;
+}
+.header__form .form__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__form .form__container-parents {
+  position: relative;
+}
+.header__form .form__search-img {
+  position: absolute;
+  left: 12px;
+}
+.header__form .form__input-search {
+  padding: 12px 48px;
+  background: #F6F6F6;
+  border-radius: 8px;
+}
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+}
+/*==========Main==========*/
+.hero {
+  position: relative;
+  color: #fff;
+  font-family: "Core Sans C";
+}
+.hero__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1449/716;
+  z-index: -99;
+}
+.hero__info {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 37.771px; /* 118.035% */
+  letter-spacing: 0.157px;
+  text-transform: capitalize;
+  padding: 129px 15px 132px 193px;
+}
+.hero__product {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 37.771px; /* 118.035% */
+  letter-spacing: 0.157px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+.hero__title {
+  font-size: 78px;
+  font-weight: 800;
+  line-height: 93.622px; /* 120.028% */
+  letter-spacing: 0.315px;
+  margin-bottom: 40px;
+}
+.hero__feature {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 47.214px; /* 147.544% */
+  letter-spacing: 0.315px;
+  margin-bottom: 40px;
+}
+.hero__link {
+  padding: 16px 72px;
+  background: #fff;
+  border-radius: 8px;
+  color: #3C4242;
+  font-family: "Causten";
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.hero__link:hover {
+  background: #7F7F7F;
+  color: #fff;
+  /* Button_shadow */
+  -webkit-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+}
