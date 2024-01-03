@@ -1,0 +1,66 @@
+    &:nth-child(1) .saving-zone__body {
+      padding: toRem(64) toRem(10) toRem(65) toRem(20);
+      @media (max-width: $tablet){
+        padding: toRem(32) toRem(15) ;
+        align-items: flex-start;
+       }
+       @media (max-width: $mobileSmall){
+        align-items: flex-start;
+        padding: toRem(20) ;
+       }
+    }
+    &:nth-child(3) .saving-zone__body {
+      padding: toRem(64) toRem(17) toRem(65) toRem(10);
+      @media (max-width: $tablet){
+        padding: toRem(23) toRem(15) toRem(32) toRem(10);
+
+       }
+       @media (max-width: $mobileSmall){
+        align-items: flex-start;
+        padding: toRem(20) ;
+       }
+    }
+    &:nth-child(2) .saving-zone__body {
+      padding: toRem(34) toRem(25) toRem(41) toRem(10);
+      @media (max-width: $tablet){
+        padding: toRem(17) toRem(15) toRem(20) toRem(10);
+
+       }
+       @media (max-width: $mobileSmall){
+        align-items: flex-start;
+        padding: toRem(20) ;
+       }
+    }
+    @for $i from 4 through 5 {
+      &:nth-child(#{$i}) {
+        grid-column: 3 span;
+        @media (max-width: $tablet){
+          grid-column: span 2;
+        }
+      }
+    }
+    //body
+    @for $i from 4 through 5 {
+      &:nth-child(#{$i}) .saving-zone__body {
+        max-width: toRem(164);
+        padding: toRem(46) toRem(110) toRem(50) toRem(15);
+        @media (max-width: $tablet){
+         padding: toRem(25) toRem(15);
+
+        }
+        @media (max-width: $mobileSmall){
+          align-items: flex-start;
+          padding: toRem(20) ;
+         }
+      }
+    }
+    @for $i from 2 through 5 {
+      &:nth-child(#{$i}) {
+        justify-content: flex-end;
+      }
+    }
+    //body
+    @for $i from 2 through 5 {
+      &:nth-child(#{$i}) .saving-zone__body {
+      }
+    }
